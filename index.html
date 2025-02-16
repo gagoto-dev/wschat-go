@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WS Chat</title>
+    <style>
+      body {
+        color-scheme: dark;
+        background: gray;
+        max-width: 100%;
+        max-height: 100%;
+
+        margin: 0;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        width: 50vw;
+        height: 50vh;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90% 10%;
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+      }
+
+      #messages {
+      }
+
+      #new-message {
+        width: 100%;
+        height: 46px;
+        font-size: 20px;
+        padding: 4px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Websocket Chat</h1>
+    <main>
+      <div id="messages">
+        <p>test message</p>
+        <p>new message</p>
+      </div>
+      <input
+        id="new-message"
+        type="text"
+        name="message"
+        placeholder="Escribe un mensaje."
+      />
+    </main>
+    <div>
+    </div>
+  </body>
+</html>

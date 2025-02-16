@@ -1,1 +1,2 @@
-# wschat-go
+# Websocket chat with GO
+
